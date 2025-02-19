@@ -3,19 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Formulario</title>
 </head>
 <body>
-    <label for="nombre">Nombre:</label>
-    <input type="text" id="nombre" />
+    <header>Dario Miguel Moreno González</header>
 
-    <label for="nombre">Password:</label>
-    <input type="text" id="password" />
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" />
 
-    <input type="button" onclick="guardarDatos()" value="Guardar datos" />
+        <label for="nombre">Password:</label>
+        <input type="text" id="password" />
 
+        <input type="button" class="btn" onclick="guardarDatos()" value="GUARDAR DATOS" />
+    </form>
+
+    
     <p id="datos">Pulsa para ver tu nombre y tu password.</p>
-    <input type="button" onclick="recuperarDatos()" value="Recuperar datos" />
+    <input type="button" class="btn" onclick="recuperarDatos()" value="RECUPERAR DATOS" />
     <script src="/js/scripts.js"></script>
 </body>
 </html>
